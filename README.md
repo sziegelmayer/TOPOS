@@ -11,12 +11,11 @@ conda acitvate topos
 
 # Install TOPOS
 python -m pip install toposv
-
 ```
 
 ## Inference
 
-topos_predict -i <path/to/input/folder> -o <path/to/output/directory>
+topos_predict -i <path/to/input/folder> -o <path/to/output/folder>
 
 
 ## Contributing
