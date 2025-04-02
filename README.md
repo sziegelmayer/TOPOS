@@ -1,31 +1,28 @@
-# TOPOS: Target Organ Prediction of Scout Views for Automated CT Scan Planning
-CT-overscanning is a substantial and avoidable source of radiation exposure in medical imaging. TOPOS was designed to be used as an easy-to-apply tool for automatic scan planning. Using the nnU-Net framework, it enables the identification and segmentation of 26 target structures for 5 examination regions, which can be used for automatic scan planning and visual guideance for the technologist. The associated scientific manuscript has been published and should be cited as follows when used:
+# TOPOS
+
+**Target Organ Prediction of Scout Views for Automated CT Scan Planning**
+
+TOPOS is a deep learning-based tool for anatomical region detection and localization from scout scans. It uses a trained nnUNet v2 model to segment 26 anatomical labels from 2D radiographic scout views.
+
+This package provides a simple Python interface for inference and post-processing, and automatically downloads the model checkpoint from Hugging Face.
+
+---
+
+## Features
+
+- Deep learning-based organ localization
+- 26 anatomical structures supported
+- Compatible with nnUNet v2 (2D configuration)
+- Automatically downloads the pretrained checkpoint
+- Outputs per-label `.nii.gz` segmentations
+
+---
 
 ## Installation
-Install TOPOS with piop:
 
-```
 # Create virtual environment
 conda create -n topos python=3.11 pip
 conda acitvate topos
 
 # Install TOPOS
 python -m pip install toposv
-```
-
-## Inference
-
-topos_predict -i <path/to/input/folder> -o <path/to/output/folder>
-
-
-## Contributing
-
-Contributions are welcome as soon as we share the full code. If you would like to suggest improvements or add new features, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the Apache 2.0 License.
-
-## Contact
-
-For any questions or feedback, please contact s.ziegelmayer@tum.de
