@@ -14,9 +14,10 @@ python -m pip install toposv
 ```
 
 ## Inference
-
-topos_predict -i <path/to/input/folder> -o <path/to/output/folder>
-
+Topos segments a single nii.gz file within the input directory and writes segmentations to the specified output directory.
+```
+topos_predict -i <path/to/input/file> -o <path/to/output/folder>
+```
 
 ## Contributing
 
