@@ -1,4 +1,5 @@
-!(images/logo.png)
+!(images/Logo.png)
+
 #Target Organ Prediction of Scout Views for Automated CT Scan Planning
 CT-overscanning is a substantial and avoidable source of radiation exposure in medical imaging. TOPOS was designed to be used as an easy-to-apply tool for automatic scan planning. Using the nnU-Net framework, it enables the identification and segmentation of 26 target structures for 5 examination regions, which can be used for automatic scan planning and visual guideance for the technologist. The associated scientific manuscript has been published and should be cited as follows when used:
 
