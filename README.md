@@ -7,7 +7,7 @@ Install TOPOS with pip:
 ```
 # Create virtual environment
 conda create -n topos python=3.11 pip
-conda acitvate topos
+conda activate topos
 
 # Install TOPOS
 python -m pip install toposv
